@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root{
+        --primary-color:brown;
+        --custom-width:330px;
+      }
+      .container{
+        margin: 2px;
+        padding:2px;
+        border: 1px solid black;
+        height: 700px;
+        background-color: rgb(146, 252, 187);
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+      }
+      .box{
+
+
+        padding:5px;
+        background-color: aqua;
+        width:var(--custom-width);
+        border:1px solid --primary-color;
+       /* justify-content: center;
+        align-content: center;
+        display: flex;*/
+        height: 330px;
+        width: 330px;
+        margin: 5px;
+        /*box-shadow: -10px -60px brown;*/
+       /* box-shadow: 10px 15px 50px brown;
+          box-shadow: 10px 15px 5px 80px rgba(13,25,46,0.7);*/
+          /*box-shadow: inset 10px 15px browns;*/
+        box-shadow: 10px 15px var(--primary-color),
+         15px 20px green,20px 25px yellow,
+         25px 30px blue,30px 35px white,
+         35px 40px violet,40px 45px rgb(53, 1, 53);
+      }
+      #img{
+        height: 30px;
+        width: 30px;
+      }
+      #head1{
+         /*text-shadow: 12px 13x 2px white;
+           text-shadow: yellow 12px 13px 1px;
+           text-shadow: white 10px 20px ;
+           text-shadow: 12px 10px;*/
+           
+           text-shadow:3px 1px 2px black,
+           15px 4px 1em rgb(255, 0, 0),16px 5px 0.2em rgb(255, 230, 0)
+           ,17px 6px 1em green;
+           color: white;
+           font:
+           1.5em Georgia,
+           serif;
+    
+          }
+   
+    </style>
+</head>
+<body>
+  <div class="container">
+       <div class="box">
+        <img src="image.jpeg" alt="image">
+        <h1 id="head1">welcome coding</h1>
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum vel 
+        rem quas eos sapiente natus sed magni at voluptatem perspiciatis, 
+        ratione dolor blanditiis consequuntur a. Eius odit exercitationem numquam?</p>
+       </div>
+
+  </div>  
+</body>
+</html>
